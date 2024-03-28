@@ -1,0 +1,104 @@
+*{
+    margin: ;
+    padding: ;
+    box-sizing: border-box;
+    font-family: "open sans", sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background-color: #494e49;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+
+}
+
+.tabela-preço{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: min(1600px, 100%);
+    margin: auto;
+}
+
+.card-preço{
+    flex: 1;
+    max-width: 360px;
+    background-color: #fff;
+    margin: 20px 10px;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+    color: #2d2d2d;
+    transition: .1s linear;
+}
+
+.card-preço:hover .card-preço-header{
+    box-shadow: 0 0 0 26em #0fbcf9;
+
+}
+
+.card-preço-header{
+    background-color: #0fbcf9;
+    display: inline-block;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 0 0 20px 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: .1s linear;
+
+}
+
+.preço{
+    font-size: 70px;
+    color: #0fbcf9;
+    margin: 40px 0;
+    transition: .1s linear;
+}
+
+.preço sup, .preço span{
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.card-preço:hover, .card-preço:hover ,preço{
+    color: #fff;
+
+}
+
+.card-preço li{
+    font-size: 16px;
+    padding: 10px 0;
+    text-transform: uppercase;
+}
+
+.btn{
+    display: inline-block;
+    margin-bottom: 40px;
+    margin-top: 80px;
+    border: 2px solid #0fbcf9;
+    color: #0fbcf9;
+    padding: 18px 40px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: 0.1s linear;
+
+}
+
+.btn:hover{
+    background-color: #0fbcf9;
+    color: #fff;
+}
+
+@media screen and (max-width: 1100px){
+    .card-preço{
+        flex: 50%;
+    }
+}
+    
+
